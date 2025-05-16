@@ -1,0 +1,32 @@
+Fitness Tracker Dashboard
+
+
+A fitness tracking web application that allows users to log their workouts, set fitness goals, and track progress in a beautiful dark-themed dashboard.
+
+
+
+Features:
+User Authentication using Google OAuth (Login/Logout)
+
+Profile Setup for the first-time users (age, height, weight)
+
+Add Workouts: Track the type, duration, and calories burned
+
+View Workout History: View past workouts in an interactive list
+
+Calories Chart: Visualize progress with a line chart tracking calories burned
+
+Responsive Layout: Dashboard with a clean 3-column layout for profile, workouts, and goals
+
+
+
+Technologies:
+Frontend: HTML, CSS, JavaScript (ES6)
+
+Backend: Node.js, Express.js, Passport.js for Google authentication
+
+Database: MongoDB (MongoDB Atlas)
+
+Charting: Chart.js for the workout progress visualization
+
+Styling: Custom dark theme (using CSS)

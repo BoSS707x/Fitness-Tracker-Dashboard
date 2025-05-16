@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="dark-theme">
+  <header class="navbar dashboard-navbar">
+    <div class="header-content">
+      <h1 class="dashboard-title">Dashboard</h1>
+      <button id="logoutBtn" class="logout-btn">Logout</button>
+    </div>
+  </header>
+
+  <main class="dashboard-wrapper">
+    <div class="top-row">
+      <section class="profile-card">
+        <h2>Profile</h2>
+        <p><strong>Name:</strong> <span id="displayName">Loading...</span></p>
+        <p><strong>Age:</strong> 25</p>
+        <p><strong>Height:</strong> 180 cm</p>
+        <p><strong>Weight:</strong> 120 kg</p>
+      </section>
+
+      <section class="workout-form">
+        <h2>Add Workout</h2>
+        <form id="workoutForm" data-id="">
+          <input type="text" id="type" placeholder="Workout Type" required />
+          <input type="number" id="duration" placeholder="Duration (minutes)" required />
+          <input type="number" id="calories" placeholder="Calories Burned" required />
+          <button type="submit">Add</button>
+        </form>
+      </section>
+
+      <section class="workout-list">
+        <h2>Workout History</h2>
+        <ul id="workoutHistory"></ul>
+      </section>
+    </div>
+
+    <section class="chart-section">
+      <h2>Calories Chart</h2>
+      <canvas id="progressChart" height="80"></canvas>
+    </section>
+  </main>
+
+  <script src="/js/dashboard.js"></script>
+</body>
+</html>

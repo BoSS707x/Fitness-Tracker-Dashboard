@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Complete Your Profile</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="dark-theme">
+  <header class="navbar">
+    <div class="title">Complete Your Profile</div>
+  </header>
+
+  <main class="dashboard-content single-column">
+    <section class="profile-card">
+      <h2>Enter Your Information</h2>
+      <form id="setupForm">
+        <input type="number" id="age" placeholder="Age" required />
+        <input type="number" id="height" placeholder="Height (cm)" required />
+        <input type="number" id="weight" placeholder="Weight (kg)" required />
+        <button type="submit">Save</button>
+      </form>
+      <p id="setupStatus"></p>
+    </section>
+  </main>
+
+  <script src="/js/setup.js"></script>
+</body>
+</html>

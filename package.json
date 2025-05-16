@@ -1,0 +1,13 @@
+{
+  "name": "fitness-tracker-dashboard-root",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "passport-google-oauth20": "^2.0.0"
+  }
+}
